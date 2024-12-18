@@ -6,7 +6,7 @@ interface TooltipedProps {
 }
 
 const Tooltiped: FC<TooltipedProps> = ({ children, tooltip }) => {
-   const [isVisible, setIsVisible] = useState(true);
+   const [isVisible, setIsVisible] = useState(false);
 
    return (
       <div className="relative inline-block">

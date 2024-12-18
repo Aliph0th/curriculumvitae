@@ -9,3 +9,4 @@
    font-style: normal;
 }
 
+path { transition: fill .2s ease; }
