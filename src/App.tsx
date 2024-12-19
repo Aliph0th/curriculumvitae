@@ -3,13 +3,14 @@ import About from './components/sections/About';
 import DownloadSvg from './assets/download.svg?react';
 import PdfSvg from './assets/pdf.svg?react';
 import Tooltiped from './components/Tooltiped';
-import Contacts from './components/sidebar/Contacts';
+import List from './components/sidebar/Contacts';
+import { CONTACTS, LANGUAGES, SKILLS } from './constants';
 
 function App() {
    return (
       <div className="max-w-[1100px] mx-auto py-7 px-4">
          <Header />
-         <main className="grid grid-cols-[1fr_3fr] grid-rows-2 my-7">
+         <main className="grid grid-cols-[1fr_3fr] grid-rows-auto my-7">
             <About className="row-start-1 col-start-1 col-span-2" />
             <div className="row-start-1 col-start-1 col-span-2 justify-self-end">
                <Tooltiped
@@ -24,8 +25,10 @@ function App() {
                   <DownloadSvg className="w-8 hover:fill-accent" />
                </Tooltiped>
             </div>
-            <aside className="row-start-2 col-start-1">
-               <Contacts />
+            <aside className="mt-5 row-start-2 col-start-1">
+               <List title="Contacts" list={CONTACTS} isLink />
+               <List title="Languages" list={LANGUAGES} bullet />
+               <List title="Skills" list={SKILLS} />
             </aside>
             <div className="row-start-2 col-start-2"></div>
          </main>

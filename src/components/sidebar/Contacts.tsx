@@ -1,20 +1,38 @@
-import { CONTACTS } from '../../constants';
+import { FC } from 'react';
+import { ListItem } from '../../types';
 
-const Contacts = () => {
+interface ListProps {
+   title: string;
+   list: ListItem[];
+   bullet?: boolean;
+   isLink?: boolean;
+}
+
+const List: FC<ListProps> = ({ title, list, bullet = false, isLink = false }) => {
    return (
-      <div>
-         <h3 className="mb-4 font-medium underline text-xl">Contacts</h3>
+      <div className="mb-5">
+         <h3 className="mb-4 font-medium underline decoration-dashed text-xl">{title}</h3>
          <ul>
-            {CONTACTS.map(contact => (
-               <li key={contact.title}>
-                  <a
-                     href={contact.href}
-                     target="_blank"
-                     rel="noreferrer"
-                     className="inline-flex items-center hover:fill-accent hover:text-accent mb-2"
-                  >
-                     {contact.svg}&nbsp;<span className="hover:underline">{contact.title}</span>
-                  </a>
+            {list.map(item => (
+               <li key={item.title?.toString()} className={bullet ? 'list-disc ml-4' : ''}>
+                  {isLink ? (
+                     <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`inline-flex items-center ${item.svgHoverFill || ''} hover:text-accent mb-2`}
+                     >
+                        {item.svg && <>{item.svg}&nbsp;</>}
+                        <span className="hover:underline">{item.title}</span>
+                     </a>
+                  ) : (
+                     <>
+                        <p className={`inline-flex ${item.svgHoverFill || ''} items-center mb-2`}>
+                           {item.svg && <>{item.svg}&nbsp;</>}
+                           {item.title}
+                        </p>
+                     </>
+                  )}
                </li>
             ))}
          </ul>
@@ -22,4 +40,4 @@ const Contacts = () => {
    );
 };
 
-export default Contacts;
+export default List;
