@@ -15,14 +15,16 @@ export default {
                docker: '#1072d8',
                rabbitmq: '#ff6b08',
                linux: '#636363',
-               git: '#f05539'
+               git: '#f05539',
+               mongo: '#347d28',
+               postgres: '#396c94'
             }
          }
       }
    },
    safelist: [
       {
-         pattern: /fill-tech-(express|js|ts|html|react|nest|docker|rabbitmq|linux|git)/
+         pattern: /fill-tech-.+/
       }
    ],
    plugins: []

@@ -11,6 +11,8 @@ import React from './assets/React.svg?react';
 import Nest from './assets/nest.svg?react';
 import Rabbitmq from './assets/rabbitmq.svg?react';
 import Docker from './assets/docker.svg?react';
+import Mongo from './assets/mongo.svg?react';
+import Postgres from './assets/postgresql.svg?react';
 import { ListItem } from './types';
 
 export const ANCHORS = {
@@ -65,19 +67,19 @@ export const SKILLS: ListItem[] = [
       svgHoverFill: 'hover:fill-tech-ts'
    },
    {
-      title: 'HTML, CSS',
-      svg: <Html className="w-[21px] fill-inherit" />,
-      svgHoverFill: 'hover:fill-tech-html'
-   },
-   {
-      title: 'React',
-      svg: <React className="w-[23px] fill-inherit" />,
-      svgHoverFill: 'hover:fill-tech-react'
-   },
-   {
       title: 'Nest.js',
       svg: <Nest className="w-6 fill-inherit" />,
       svgHoverFill: 'hover:fill-tech-nest'
+   },
+   {
+      title: 'PostgreSQL',
+      svg: <Postgres className="w-6 fill-inherit" />,
+      svgHoverFill: 'hover:fill-tech-postgres'
+   },
+   {
+      title: 'MongoDB',
+      svg: <Mongo className="w-[22px] fill-inherit" />,
+      svgHoverFill: 'hover:fill-tech-mongo'
    },
    {
       title: 'Express',
@@ -93,6 +95,16 @@ export const SKILLS: ListItem[] = [
       title: 'RabbitMQ',
       svg: <Rabbitmq className="w-5 fill-inherit" />,
       svgHoverFill: 'hover:fill-tech-rabbitmq'
+   },
+   {
+      title: 'HTML, CSS',
+      svg: <Html className="w-[21px] fill-inherit" />,
+      svgHoverFill: 'hover:fill-tech-html'
+   },
+   {
+      title: 'React',
+      svg: <React className="w-[23px] fill-inherit" />,
+      svgHoverFill: 'hover:fill-tech-react'
    },
    {
       title: 'Linux',
