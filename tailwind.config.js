@@ -4,9 +4,9 @@ export default {
    theme: {
       extend: {
          colors: {
-            accent: '#dc1515',
+            accent: '#e80c0c',
             tech: {
-               express: '#4d4d4d',
+               express: '#323885',
                js: '#dbc61d',
                ts: '#377cc8',
                html: '#f16a30',
@@ -14,10 +14,12 @@ export default {
                nest: '#e12a54',
                docker: '#1072d8',
                rabbitmq: '#ff6b08',
-               linux: '#636363',
+               linux: '#f8bf11',
                git: '#f05539',
                mongo: '#347d28',
-               postgres: '#396c94'
+               postgres: '#396c94',
+               nodejs: '#52b255',
+               telegram: '#33a6de'
             }
          }
       }

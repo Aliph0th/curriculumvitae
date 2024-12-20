@@ -1,0 +1,23 @@
+.header {
+   @apply sticky top-0 py-5 bg-white z-10;
+   --shadow: 0px 0px 10px 4px hsla(0, 0%, 0%, 0.2);
+   box-shadow: var(--shadow);
+}
+
+@supports (animation-timeline: scroll()) {
+   .header {
+      animation: scroll-shadow linear both;
+      animation-timeline: scroll();
+      animation-range: 0ex 5ex;
+   }
+
+   @keyframes scroll-shadow {
+      from {
+         box-shadow: none;
+      }
+
+      to {
+         box-shadow: var(--shadow);
+      }
+   }
+}

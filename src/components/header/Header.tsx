@@ -1,8 +1,9 @@
-import { ANCHORS } from '../constants';
+import { ANCHORS } from '../../constants';
+import styles from './Header.module.css';
 
 const Header = () => {
    return (
-      <header className="sticky top-0 py-5 bg-white z-10 shadow-md">
+      <header className={styles.header}>
          <div className="flex justify-end gap-x-6 max-w-[1100px] mx-auto px-4">
             {Object.values(ANCHORS).map(({ title, id }) => (
                <a

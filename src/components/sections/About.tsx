@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { ANCHORS } from '../../constants';
+import Nodejs from '../../assets/nodejs.svg?react';
+import Tooltiped from '../Tooltiped';
 
 interface AboutProps {
    className?: string;
@@ -7,13 +8,17 @@ interface AboutProps {
 
 const About: FC<AboutProps> = ({ className }) => {
    return (
-      <div className={className} id={ANCHORS.ABOUT.id}>
-         <div className="w-fit">
-            <h1 className="font-semibold text-7xl">Anton Zubkov</h1>
-            <p className="-mt-1 text-right font-medium text-3xl text-accent">
-               <span className="text-[12px] text-accent/60 mr-1">aka</span>backend developer
-            </p>
-         </div>
+      <div className={className}>
+         <p>
+            I am a <strong>backend developer</strong> who has been writing code for 3 years now. I really like coding
+            on&nbsp;
+            <Tooltiped tooltip="Node.js">
+               <Nodejs className="w-7 -mb-2 hover:fill-tech-nodejs" />
+            </Tooltiped>
+            .<br />
+            I&apos;m inspired by the creation of different systems and their components that scale easily and are
+            resistant to loads and failures or faults
+         </p>
       </div>
    );
 };
