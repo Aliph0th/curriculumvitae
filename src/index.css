@@ -10,7 +10,7 @@
 }
 
 path, circle {
-   transition: fill 0.2s ease;
+   transition: fill 0.15s ease;
 }
 svg {
    transition: filter 0.2s ease;

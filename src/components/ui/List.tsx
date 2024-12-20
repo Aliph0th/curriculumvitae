@@ -20,7 +20,7 @@ const List: FC<ListProps> = ({ title, list, bullet = false, isLink = false }) =>
                         href={item.href}
                         target="_blank"
                         rel="noreferrer"
-                        className={`inline-flex items-center ${item.svgHover || ''} hover:text-accent mb-2`}
+                        className={`transition-all inline-flex items-center ${item.svgHover || ''} hover:text-accent mb-2`}
                      >
                         {item.svg && <>{item.svg}&nbsp;</>}
                         <span className="hover:underline">{item.title}</span>

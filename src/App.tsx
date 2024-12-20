@@ -3,7 +3,7 @@ import About from './components/sections/About';
 import DownloadSvg from './assets/download.svg?react';
 import PdfSvg from './assets/pdf.svg?react';
 import Tooltiped from './components/ui/Tooltiped';
-import List from './components/sidebar/Contacts';
+import List from './components/ui/List';
 import { ANCHORS, CONTACTS, LANGUAGES, SKILLS } from './constants';
 import WorkExperience from './components/sections/WorkExperience';
 import PetProjects from './components/sections/PetProjects';
