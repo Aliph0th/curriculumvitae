@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Nodejs from '../../assets/nodejs.svg?react';
-import Tooltiped from '../Tooltiped';
+import Tooltiped from '../ui/Tooltiped';
 
 interface AboutProps {
    className?: string;

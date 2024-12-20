@@ -49,16 +49,16 @@ const WorkExperience: FC<WorkExperienceProps> = ({ className }) => {
                   <li>
                      Containerize an application with aid of{' '}
                      <Docker className="w-6 inline-block mr-1 hover:fill-tech-docker" />
-                     Docker and Docker-compose
+                     Docker and docker-compose
                   </li>
                   <li>
                      Create <React className="w-6 inline-block mr-1 hover:fill-tech-react" />
-                     React applications
+                     React applications with Tailwind CSS
                   </li>
                   <li>Authorize an user via JWT</li>
                   <li>Deal with NoSQL, SQL databases and ORMs</li>
                   <li>
-                     Enable communicating among services using{' '}
+                     Enable communication among services using{' '}
                      <Rabbit className="w-5 inline-block mr-1 hover:fill-tech-rabbitmq" />
                      RabbitMQ
                   </li>
