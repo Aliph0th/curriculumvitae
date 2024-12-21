@@ -6,3 +6,12 @@ export type ListItem = {
    svgHover?: string;
    href?: string;
 };
+
+export type PetProject = {
+   title: string;
+   link: string;
+   preview?: string;
+   description: ReactNode;
+   keyTechnologies: string[];
+   technologies: string[];
+};
