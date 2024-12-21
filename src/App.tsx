@@ -31,7 +31,9 @@ function App() {
                         </span>
                      }
                   >
-                     <DownloadSvg className="w-8 hover:fill-accent" />
+                     <a href="/Zubkov_CV.pdf" target="_blank" rel="noreferrer">
+                        <DownloadSvg className="w-8 hover:fill-accent" />
+                     </a>
                   </Tooltiped>
                </div>
                <aside className="mt-5 row-start-2 col-start-1">
