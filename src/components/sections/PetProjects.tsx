@@ -30,7 +30,7 @@ const PetProjects: FC<PetProjectsProps> = ({ className }) => {
                         </Tooltiped>
                      </a>
                   )}
-                  <p className="text-sm w-10/12 my-2.5">{project.description}</p>
+                  <p className="text-sm w-11/12 my-2.5">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                      {project.keyTechnologies.map(tech => (
                         <Badge key={tech} emphasize>

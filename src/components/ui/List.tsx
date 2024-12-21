@@ -6,13 +6,15 @@ interface ListProps {
    list: ListItem[];
    bullet?: boolean;
    isLink?: boolean;
+   className?: string;
+   ulClassName?: string;
 }
 
-const List: FC<ListProps> = ({ title, list, bullet = false, isLink = false }) => {
+const List: FC<ListProps> = ({ title, list, bullet = false, isLink = false, className, ulClassName }) => {
    return (
-      <div className="mb-5">
+      <div className={className}>
          <h3 className="mb-4 font-medium underline decoration-dashed text-xl">{title}</h3>
-         <ul>
+         <ul className={ulClassName}>
             {list.map(item => (
                <li key={item.title?.toString()} className={bullet ? 'list-disc ml-4' : ''}>
                   {isLink ? (
