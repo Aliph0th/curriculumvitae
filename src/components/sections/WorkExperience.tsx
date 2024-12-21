@@ -8,6 +8,7 @@ import React from '../../assets/react.svg?react';
 import Linux from '../../assets/Linux.svg?react';
 import Rabbit from '../../assets/rabbitmq.svg?react';
 import Elastic from '../../assets/elasticsearch.svg?react';
+import Redis from '../../assets/redis.svg?react';
 
 interface WorkExperienceProps {
    className?: string;
@@ -66,6 +67,10 @@ const WorkExperience: FC<WorkExperienceProps> = ({ className }) => {
                      Use full-text search in{' '}
                      <Elastic className="w-5 inline-block mr-1 brightness-0 hover:brightness-100" />
                      ElasticSearch
+                  </li>
+                  <li>
+                     Apply advantages of <Redis className="w-6 inline-block mr-1 hover:fill-tech-redis" />
+                     Redis
                   </li>
                </ol>
             </li>

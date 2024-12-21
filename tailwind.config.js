@@ -18,6 +18,7 @@ export default {
                git: '#f05539',
                mongo: '#347d28',
                postgres: '#396c94',
+               redis: '#d12d1f',
                nodejs: '#52b255',
                telegram: '#33a6de'
             }
