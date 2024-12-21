@@ -5,7 +5,7 @@ import Nest from '../../assets/nest.svg?react';
 import Express from '../../assets/express.svg?react';
 import Docker from '../../assets/docker.svg?react';
 import React from '../../assets/react.svg?react';
-import Linux from '../../assets/Linux.svg?react';
+import Linux from '../../assets/linux.svg?react';
 import Rabbit from '../../assets/rabbitmq.svg?react';
 import Elastic from '../../assets/elasticsearch.svg?react';
 import Redis from '../../assets/redis.svg?react';
