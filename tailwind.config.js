@@ -5,6 +5,8 @@ export default {
       extend: {
          colors: {
             accent: '#e80c0c',
+            mmf: '#18806E',
+            codewars: '#f05656',
             tech: {
                express: '#323885',
                js: '#dbc61d',
