@@ -7,7 +7,7 @@ import Html from './assets/html.svg?react';
 import Express from './assets/express.svg?react';
 import Git from './assets/git.svg?react';
 import Linux from './assets/linux.svg?react';
-import React from './assets/React.svg?react';
+import React from './assets/react.svg?react';
 import Nest from './assets/nest.svg?react';
 import Rabbitmq from './assets/rabbitmq.svg?react';
 import Docker from './assets/docker.svg?react';
