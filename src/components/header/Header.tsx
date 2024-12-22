@@ -9,7 +9,7 @@ const Header = () => {
                <a
                   key={title}
                   href={`#${id}`}
-                  className="transition-all text-green text-center hover:underline hover:decoration-dashed hover:text-accent text-sm md:text-base"
+                  className="transition-all text-green text-center max-[230px]:text-[8px] hover:underline hover:decoration-dashed hover:text-accent text-sm md:text-base"
                >
                   {title}
                </a>

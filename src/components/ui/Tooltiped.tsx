@@ -18,7 +18,7 @@ const Tooltiped: FC<TooltipedProps> = ({ children, tooltip }) => {
             {children}
          </div>
          {isVisible && (
-            <div className="absolute w-max bottom-full z-40 mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm rounded py-1 px-2">
+            <div className="absolute w-max bottom-full max-sm:text-[12px] z-40 mb-2 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm rounded py-1 px-2">
                {tooltip}
             </div>
          )}

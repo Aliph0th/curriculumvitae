@@ -19,4 +19,6 @@ svg {
 html {
    scroll-behavior: smooth;
    scroll-padding-top: 4rem;
+   @apply max-[370px]:text-[12px];
+   @apply max-[280px]:text-[10px];
 }
